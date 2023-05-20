@@ -1,0 +1,20 @@
+The textures: T_00_NewMoon_D, T_01_WaxingCrescentMoon_D, T_02_FirstQuarterMoon_D, T_03_WaxingGibbous_D, 
+              T_04_FullMoon_D, T_05_WaningGibbous_D, T_06_LastQuarter_D and T_07_WaningCrescent_D have
+			  being edited from the original "full-moon-496873_1920.jpg" obtained from:
+			  https://pixabay.com/pt/lua-cheia-lua-brilhante-reino-unido-496873   
+			  licensed under CC0 - creative commons, with no attribution required and for commercial use allowed.
+			  The PSD (Photoshop files are being provided with each changes on the original) inside texture folder.
+
+The T_Sky_Blue, T_Sky_Clouds_M, T_Sky_Stars textures are from Unreal Engine 4 Engine, originally used in the BP_Sky_Sphere blueprint.
+
+The function Henyey-Greenstein-Phase is part of Unreal Engine 4 and it is not exposed in the library, it is replicated as-is to make it easier to find by novices.
+
+Interpolation formulas used inside FL_Orchestrator library for Blueprints was obtained from the C++ code which is Open Source (BSD License) 
+from: http://robertpenner.com/easing/   
+and based on C++ code file found in the repository at GitHub: https://github.com/jesusgollonet/ofpennereasing 
+
+The Volumetric Raymarching techniques used was based in insights from the Epic's stream https://forums.unrealengine.com/unreal-engine/events/116634-training-livestream-realtime-simulation-and-volume-modelling-experiments-may-2-live-from-epic  and from Ryan Bruck's blog http://shaderbits.com/blog/creating-volumetric-ray-marcher. Several techniques provided functions inside Unreal Engine 4 already and were used in Fortnite at some extent.
+Several adaptations were made: cloud world positioning, cloud layers, erosion textures to add details, different LoD for erosion textures, 
+cloud shadows at ground via Light Function, wind contribution system, network replication and feature called Evolution Orchestrator are all 
+developed by Nilson Fernandes de Lima.
+
